@@ -35,7 +35,7 @@ const annotatedtext = builder.build(text);
 var ltdata = JSON.stringify(annotatedtext);
 ```
 
-* `text`: The text from the markup document in its original form.
+* `text`: The text from the html document in its original form.
 * _`options`_: (optional) See [`defaults`](#defaults).
 
 ### `defaults`
@@ -71,7 +71,7 @@ Expected to return an array of child nodes.
 
 #### `annotatetextnode(node)`
 
-Expected to return a struture for a text ast node with at least the following:
+Expected to return a structure for a text ast node with at least the following:
 
 * `text` is the natural language text from the node, devoid of all markup.
 * `offset` contains offsets used to extract markup text from the original document.
