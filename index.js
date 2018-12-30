@@ -12,10 +12,11 @@ const defaults = {
     return annotatedtext.defaults.annotatetextnode(node);
   },
   interpretmarkup(text = "") {
-    let count_p = (text.match(/\<\/p>/g) || []).length;
-    let count_br = (text.match(/\<br[\s\/]*>/g) || []).length;
-    let count_nl = (text.match(/\n/g) || []).length;
-    return "\n".repeat( (2 * count_p) + count_br + count_nl );
+    let countP = (text.match(/\<\/p>/g) || []).length;
+    let countH = (text.match(/\<\/h\d+>/g) || []).length;
+    let countBr = (text.match(/\<br[\s\/]*>/g) || []).length;
+    let coungNl = (text.match(/\n/g) || []).length;
+    return "\n".repeat( (2 * countP) + (2 * countH) + countBr + coungNl );
   },
   rehypeoptions: {
     emitParseErrors: false
