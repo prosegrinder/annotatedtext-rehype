@@ -4,3 +4,12 @@ node_js:
 - lts/*
 - node
 sudo: false
+deploy:
+  provider: npm
+  email: david@davidlday.com
+  api_key:
+    secure: Zbiil0jILFIfRxp4Rpq9bxgOD0go/qTpaoawy9TE6ZqPNjr5KbCT0k4SJoh4BIpky80R1HqtwVZViU+QgOyIDNlr13XhwKXVMSzk0zUry/6MhtOp5HJMkvvg/7XC3Ai/CddI/5lOMdpB/Qc5kDdwUFAhrav77i3UEs9/juR5ZPObTyOuI+al1/Ldipcxf/SFueDlYuvaze+yCcBfkWbysx+4pmqzPoo/YI19sJejMjDOfYLq8k3CvdV9MUXs8mGGgAGpuPI14AHwG3VAxy3fMGcwhJ4o6VdkAltfYXjh3z7yhPgGfS2rCwwY6zR5hloW3Yji8LCbOV/pv72if9X55NeTomAexWhjIdRwiM6nyNuCWzx2MCV5l5JhmXEuyrObmZ2/MEGX6pjmTJx1pSQyw81czdnF+/p2IeXSfxP8F304KEpotYTgY2F7fAqtj/jc52VdVYQnpj1j3K4qF7bhLYi2AONe0+E7KoPsWUkWXwbEtnfFwf7rX3ikejLehfmIVEDi9K5mlEa1nMW/bGZTXhm/HY3oy6UO/pn1wWNPnUEJvY2J9mRCJUgMWUuJB/b23EldgbRt5hUae01/zfDCGs423qyRjXyYE+bACxolrF+TmcH2cKSTeWbGCmRCwI06XzHhYB+LNexKfzozMnMIv1ekKCIYjgiWyMIhDVuCPI4=
+  on:
+    tags: true
+    repo: prosegrinder/annotatedtext-rehype
+    branch: master
