@@ -27,7 +27,7 @@
   "dependencies": {
     "annotatedtext": "^0.1.0",
     "rehype-parse": "^6.0.0",
-    "unified": "^7.1.0"
+    "unified": "^8.4.1"
   },
   "devDependencies": {
     "chai": "^4.2.0",
