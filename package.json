@@ -1,6 +1,6 @@
 {
   "name": "annotatedtext-rehype",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A lightweight JavaScript library based on annotatedtext and remark-hype for converting html documents into an annotated text format consumable by LanguageTool as AnnotatedText.",
   "main": "index.js",
   "directories": {
