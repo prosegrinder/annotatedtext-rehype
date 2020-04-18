@@ -1,6 +1,6 @@
 # annotatedtext-rehype
 
-[![Build Status](https://travis-ci.org/prosegrinder/annotatedtext-rehype.svg?branch=master)](https://travis-ci.org/prosegrinder/annotatedtext-rehype)
+[![Node.js CI](https://github.com/prosegrinder/annotatedtext-rehype/workflows/Node.js%20CI/badge.svg?branch=master)](https://github.com/prosegrinder/annotatedtext-rehype/actions?query=workflow%3A%22Node.js+CI%22+branch%3Amaster)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/bf0083b851fd43539f77c453a9c97e87)](https://www.codacy.com/app/ProseGrinder/annotatedtext-rehype?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=prosegrinder/annotatedtext-rehype&amp;utm_campaign=Badge_Grade)
 
 A lightweight JavaScript library based on [annotatedtext](https://github.com/prosegrinder/annotatedtext) and
