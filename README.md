@@ -1,7 +1,7 @@
 # annotatedtext-rehype
 
 [![Node.js CI](https://github.com/prosegrinder/annotatedtext-rehype/workflows/Node.js%20CI/badge.svg?branch=master)](https://github.com/prosegrinder/annotatedtext-rehype/actions?query=workflow%3A%22Node.js+CI%22+branch%3Amaster)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/bf0083b851fd43539f77c453a9c97e87)](https://www.codacy.com/app/ProseGrinder/annotatedtext-rehype?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=prosegrinder/annotatedtext-rehype&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/3a7d5bc703d0410cbe00d48eaed7a299)](https://www.codacy.com/gh/prosegrinder/annotatedtext-rehype?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=prosegrinder/annotatedtext-rehype&amp;utm_campaign=Badge_Grade)
 
 A lightweight JavaScript library based on [annotatedtext](https://github.com/prosegrinder/annotatedtext) and
 [rehype-parse](https://github.com/rehypejs/rehype/tree/master/packages/rehype-parse) for
