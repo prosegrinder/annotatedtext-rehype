@@ -1,7 +1,7 @@
 import * as annotatedtext from "annotatedtext";
+import * as rehypeparse from "rehype-parse";
 import * as unified from "unified";
 import { IOptions } from "../types";
-import * as rehypeparse from "rehype-parse";
 
 const defaults = {
   children(node: annotatedtext.INode) {
