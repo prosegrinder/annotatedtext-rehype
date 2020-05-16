@@ -1,20 +1,21 @@
 "use strict";
 
 var expect = require("chai").expect;
-var builder = require("../index");
+var builder = require("../../out/index");
+// var builder = require("../index");
 var fs = require("fs");
 
 describe("#build()", function () {
 
   it("should return the expected annotated text object", function () {
-    const expected = JSON.parse(fs.readFileSync("./test/annotatedtext.json", "utf8"));
-    const text = fs.readFileSync("./test/test.html", "utf8");
+    const expected = JSON.parse(fs.readFileSync("./src/test/annotatedtext.json", "utf8"));
+    const text = fs.readFileSync("./src/test/test.html", "utf8");
     const result = builder.build(text);
     expect(result).to.deep.equal(expected);
   });
 
   it("should match the original document exactly", function () {
-    const expected = fs.readFileSync("./test/test.html", "utf8");
+    const expected = fs.readFileSync("./src/test/test.html", "utf8");
     const annotatedtext = builder.build(expected);
     const annotation = annotatedtext.annotation;
     let result = "";
@@ -26,14 +27,14 @@ describe("#build()", function () {
   });
 
   it("should return the expected annotated text with backslashes object", function () {
-    const expected = JSON.parse(fs.readFileSync("./test/backslashes.json", "utf8"));
-    const text = fs.readFileSync("./test/backslashes.html", "utf8");
+    const expected = JSON.parse(fs.readFileSync("./src/test/backslashes.json", "utf8"));
+    const text = fs.readFileSync("./src/test/backslashes.html", "utf8");
     const result = builder.build(text);
     expect(result).to.deep.equal(expected);
   });
 
   it("should match the original document with backslashes exactly", function () {
-    const expected = fs.readFileSync("./test/backslashes.html", "utf8");
+    const expected = fs.readFileSync("./src/test/backslashes.html", "utf8");
     const annotatedtext = builder.build(expected);
     const annotation = annotatedtext.annotation;
     let result = "";
