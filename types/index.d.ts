@@ -3,7 +3,7 @@ import * as rehypeparse from "rehype-parse";
 
 declare namespace annotatedtextrehype {
   export interface IOptions {
-    rehypeoptions: rehypeparse.RehypeParseOptions;
+    rehypeoptions: any;
     children(node: annotatedtext.INode): annotatedtext.INode[];
     annotatetextnode(
       node: annotatedtext.INode,
