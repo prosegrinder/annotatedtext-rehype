@@ -1,11 +1,11 @@
 # annotatedtext-rehype
 
-[![Node.js CI](https://github.com/prosegrinder/annotatedtext-rehype/workflows/Node.js%20CI/badge.svg?branch=master)](https://github.com/prosegrinder/annotatedtext-rehype/actions?query=workflow%3A%22Node.js+CI%22+branch%3Amaster)
+[![Node.js CI](https://github.com/prosegrinder/annotatedtext-rehype/workflows/Node.js%20CI/badge.svg?branch=main)](https://github.com/prosegrinder/annotatedtext-rehype/actions?query=workflow%3A%22Node.js+CI%22+branch%3Amain)
 [![ESLint](https://github.com/prosegrinder/annotatedtext-rehype/workflows/ESLint/badge.svg)](https://github.com/prosegrinder/annotatedtext-rehype/actions?query=workflow%3AESLint)
 
 A lightweight JavaScript library based on
 [annotatedtext](https://github.com/prosegrinder/annotatedtext) and
-[rehype-parse](https://github.com/rehypejs/rehype/tree/master/packages/rehype-parse)
+[rehype-parse](https://github.com/rehypejs/rehype/tree/main/packages/rehype-parse)
 for converting html documents into an annotated text format consumable by
 LanguageTool as
 [AnnotatedText](https://languagetool.org/development/api/org/languagetool/markup/AnnotatedText.html).
