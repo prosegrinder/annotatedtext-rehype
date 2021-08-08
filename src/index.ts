@@ -1,6 +1,6 @@
 import * as annotatedtext from "annotatedtext";
-import * as rehypeparse from "rehype-parse";
-import * as unified from "unified";
+import rehypeparse from "rehype-parse";
+import { unified } from "unified";
 import { IOptions } from "../types";
 
 const defaults = {
