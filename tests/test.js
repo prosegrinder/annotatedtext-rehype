@@ -1,10 +1,6 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-"use strict";
-
-var expect = require("chai").expect;
-var builder = require("../out/index");
-// var builder = require("../index");
-var fs = require("fs");
+import chai from "chai";
+import * as builder from "../out/index.js";
+import fs from "node:fs";
 
 describe("#build()", function () {
   it("should return the expected annotated text object", function () {
@@ -13,7 +9,7 @@ describe("#build()", function () {
     );
     const text = fs.readFileSync("./tests/test.html", "utf8");
     const result = builder.build(text);
-    expect(result).to.deep.equal(expected);
+    chai.expect(result).to.deep.equal(expected);
   });
 
   it("should match the original document exactly", function () {
@@ -25,7 +21,7 @@ describe("#build()", function () {
       const text = node.text ? node.text : node.markup;
       result += text;
     }
-    expect(result).to.equal(expected);
+    chai.expect(result).to.equal(expected);
   });
 
   it("should return the expected annotated text with backslashes object", function () {
@@ -34,7 +30,7 @@ describe("#build()", function () {
     );
     const text = fs.readFileSync("./tests/backslashes.html", "utf8");
     const result = builder.build(text);
-    expect(result).to.deep.equal(expected);
+    chai.expect(result).to.deep.equal(expected);
   });
 
   it("should match the original document with backslashes exactly", function () {
@@ -46,6 +42,6 @@ describe("#build()", function () {
       const text = node.text ? node.text : node.markup;
       result += text;
     }
-    expect(result).to.equal(expected);
+    chai.expect(result).to.equal(expected);
   });
 });
