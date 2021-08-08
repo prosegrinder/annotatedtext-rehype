@@ -9,7 +9,19 @@ for converting html documents into an annotated text format consumable by
 LanguageTool as
 [AnnotatedText](https://languagetool.org/development/api/org/languagetool/markup/AnnotatedText.html).
 
-## Usage
+## Install
+
+**This package is
+[ESM only](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c).**
+Node 12+ is needed to use it, and it must be `import`ed instead of `require`d.
+
+[npm](https://docs.npmjs.com/cli/install):
+
+```bash
+npm install annotatedtext-rehype
+```
+
+## Use
 
 ### `build(text, parse, options = defaults)`
 
