@@ -39,7 +39,7 @@
   "dependencies": {
     "annotatedtext": "^1.1.4",
     "rehype-parse": "^8.0.4",
-    "unified": "^10.1.2"
+    "unified": "^11.0.2"
   },
   "devDependencies": {
     "@types/chai": "^4.3.1",
