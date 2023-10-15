@@ -38,7 +38,7 @@
   "homepage": "https://github.com/prosegrinder/annotatedtext-rehype#readme",
   "dependencies": {
     "annotatedtext": "^1.1.4",
-    "rehype-parse": "^8.0.4",
+    "rehype-parse": "^9.0.0",
     "unified": "^10.1.2"
   },
   "devDependencies": {
