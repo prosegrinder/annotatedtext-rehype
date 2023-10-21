@@ -1,3 +1,11 @@
+## v1.0.8 (2023-10-21)
+
+### Fix
+
+- upgrade annotatedtext to 1.2.0 (#364)
+- use compose() instead of build() from annotatedtext
+- upgrade to annotatedtext 1.2.0
+
 ## v1.0.7 (2022-12-12)
 
 ### Fix
