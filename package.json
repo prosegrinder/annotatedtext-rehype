@@ -38,8 +38,8 @@
   "homepage": "https://github.com/prosegrinder/annotatedtext-rehype#readme",
   "dependencies": {
     "annotatedtext": "^1.2.0",
-    "rehype-parse": "^8.0.4",
-    "unified": "^10.1.2"
+    "rehype-parse": "^9.0.0",
+    "unified": "^11.0.3"
   },
   "devDependencies": {
     "@types/chai": "^4.3.1",
