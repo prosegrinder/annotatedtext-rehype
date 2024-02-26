@@ -1,3 +1,10 @@
+## v1.0.10 (2024-02-26)
+
+### Fix
+
+- **deps**: bump rehype-parse from 8.0.4 to 8.0.5 (#379)
+- **deps**: bump rehype-parse from 8.0.4 to 8.0.5
+
 ## v1.0.9 (2023-10-22)
 
 ### Fix
