@@ -1,6 +1,16 @@
 import * as annotatedtext from "annotatedtext";
 import * as rehypeparse from "rehype-parse";
 
+/**
+ * @interface IOptions
+ * @property {rehypeparse.Options} rehypeoptions The options to use for parsing
+ * the HTML.
+ * @property {function} children A function that returns the children of a node.
+ * @property {function} annotatetextnode A function that returns an annotated
+ *  text node.
+ * @property {function} interpretmarkup A function that returns a string
+ *  representing how markup should be interpreted.
+ */
 export interface IOptions {
   rehypeoptions: rehypeparse.Options;
   children(node: annotatedtext.INode): annotatedtext.INode[];
