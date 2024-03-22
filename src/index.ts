@@ -14,17 +14,20 @@ import { IOptions } from "../types";
  *
  * const text = "<p>Some <b>bold</b> text.</p>";
  * const annotatedtext = build(text);
+ * const ltdata = JSON.stringify(annotatedtext);
  *
  */
 
 /**
- * @typedef {Object} IOptions
- * @property {Function} children - Function to get the children of a node.
- * @property {Function} annotatetextnode - Function to annotate a text node.
- * @property {Function} interpretmarkup - Function to interpret markup.
- * @property {Object} rehypeoptions - Options for the rehype parser.
+ * Default options for building annotated text.
+ * @constant defaults
+ *
+ * @property {function} children A function that returns the children of a node.
+ * @property {function} annotatetextnode A function that returns an annotation
+ *  for a text node.
+ * @property {function} interpretmarkup A function that returns a string to use
+ *  as the `interpretAs` property of an annotation.
  */
-
 const defaults = {
   children(node: annotatedtext.INode): annotatedtext.INode[] {
     return annotatedtext.defaults.children(node);
