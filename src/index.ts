@@ -3,31 +3,6 @@ import rehypeparse from "rehype-parse";
 import { unified } from "unified";
 import { IOptions } from "../types";
 
-/**
- * @module annotatedtext-rehype
- * @description
- * This module provides a function to build an annotated text from a HTML
- * string using the rehype parser.
- *
- * @example
- * import { build } from "annotatedtext-rehype";
- *
- * const text = "<p>Some <b>bold</b> text.</p>";
- * const annotatedtext = build(text);
- * const ltdata = JSON.stringify(annotatedtext);
- *
- */
-
-/**
- * Default options for building annotated text.
- * @constant defaults
- *
- * @property {function} children A function that returns the children of a node.
- * @property {function} annotatetextnode A function that returns an annotation
- *  for a text node.
- * @property {function} interpretmarkup A function that returns a string to use
- *  as the `interpretAs` property of an annotation.
- */
 const defaults = {
   children(node: annotatedtext.INode): annotatedtext.INode[] {
     return annotatedtext.defaults.children(node);
@@ -50,13 +25,6 @@ const defaults = {
   },
 };
 
-/**
- * Build an annotated text from a HTML string using the rehype parser.
- * @function build
- * @param text The HTML string to parse.
- * @param options The options to use.
- * @returns The annotated text.
- */
 function build(
   text: string,
   options: IOptions = defaults,
