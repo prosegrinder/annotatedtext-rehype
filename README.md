@@ -1,6 +1,6 @@
 # annotatedtext-rehype
 
-[![Node.js CI](https://github.com/prosegrinder/annotatedtext-rehype/actions/workflows/npm-ci.yaml/badge.svg?branch=main)](https://github.com/prosegrinder/annotatedtext-rehype/actions/workflows/npm-ci.yaml)
+[![Node.js CI](https://github.com/prosegrinder/annotatedtext-rehype/actions/workflows/npm-ci.yaml/badge.svg)](https://github.com/prosegrinder/annotatedtext-rehype/actions/workflows/npm-ci.yaml)
 
 A lightweight JavaScript library based on
 [annotatedtext](https://github.com/prosegrinder/annotatedtext) and
